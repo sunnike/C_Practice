@@ -1,0 +1,8 @@
+19:46:52 **** Rebuild of configuration Debug for project C_Test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\C_Test.o ..\src\C_Test.c 
+gcc -o C_Test.exe src\C_Test.o 
+Info: Parallel threads used: 1
+
+19:46:53 Build Finished (took 894ms)
+

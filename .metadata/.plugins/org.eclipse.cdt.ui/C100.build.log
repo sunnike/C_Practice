@@ -1,0 +1,5 @@
+21:12:32 **** Clean-only build of configuration Release for project C100 ****
+rm -rf libC100.a Lib_Src/platform.o Lib_Src/platform.d 
+
+21:12:33 Build Finished (took 251ms)
+

@@ -1,0 +1,5 @@
+21:12:33 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+
+21:12:33 Build Finished (took 171ms)
+

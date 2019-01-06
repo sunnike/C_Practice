@@ -1,0 +1,40 @@
+@echo off
+
+if not "%1" == "cplib" goto cant_run
+if "%1" == "" goto cant_run2
+if "%2" == "" goto cant_run3
+
+echo checking directories...
+
+cd ..
+
+
+if not exist "lib\Inc" mkdir "lib\Inc"
+if not exist "lib\%2" mkdir "lib\%2"
+
+echo copying %1 (%2) files ...
+
+copy /y %1\INC\*.h lib\Inc
+copy /y %1\%2\*.a lib\%2\
+
+goto done
+
+
+:cant_run
+echo can't run directly
+goto done
+
+:cant_run
+echo can't run directly
+goto done
+
+:cant_run2
+echo no project
+goto done
+
+:cant_run3
+echo no configuration
+goto done
+
+:done
+pause

@@ -1,0 +1,219 @@
+20:48:26 **** Incremental Build of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+..\Lib_Src\platform.c: In function 'platfeau':
+..\Lib_Src\platform.c:31:40: warning: variable 'Lnum' set but not used [-Wunused-but-set-variable]
+ int head = 1, length = 1, pivot_index, Lnum;
+                                        ^~~~
+ar -r libC100.a "Lib_Src\\platform.o" 
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:48:27 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+..\src\main.c:26:10: fatal error: c100.h: No such file or directory
+ #include <c100.h>
+          ^~~~~~~~
+compilation terminated.
+Info: Parallel threads used: 1
+Info: Nothing to build for C100
+20:48:54 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:48:58 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:48:59 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+20:49:00 **** Rebuild of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+..\Lib_Src\platform.c: In function 'platfeau':
+..\Lib_Src\platform.c:31:40: warning: variable 'Lnum' set but not used [-Wunused-but-set-variable]
+ int head = 1, length = 1, pivot_index, Lnum;
+                                        ^~~~
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:49:00 **** Rebuild of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:49:03 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:49:22 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:49:25 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:49:27 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:53:59 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:53:59 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+20:54:00 **** Rebuild of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:54:01 **** Rebuild of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:54:04 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:54:19 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:54:25 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:54:47 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:55:07 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:55:07 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+20:55:22 **** Rebuild of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:55:23 **** Rebuild of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:55:27 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:55:59 **** Incremental Build of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:55:59 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:56:03 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:56:19 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:56:20 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+20:56:21 **** Rebuild of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+..\Lib_Src\platform.c: In function 'platfeau':
+..\Lib_Src\platform.c:47:2: warning: 'Lnum' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  printf("The longest platform number is:%d\n ; length:%d",Lnum ,length);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:56:21 **** Rebuild of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:56:24 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:56:42 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:56:42 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+20:56:44 **** Rebuild of configuration Release for project C100 ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C100/INC "-IC:\\Users\\Chenj\\workspace\\C_Practice\\C_Work\\INC" -O3 -Wall -c -fmessage-length=0 -o "Lib_Src\\platform.o" "..\\Lib_Src\\platform.c" 
+ar -r libC100.a "Lib_Src\\platform.o" 
+C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe: creating libC100.a
+"..\\cplib.bat" cplib C100 Release 
+checking directories...
+copying C100 (Release) files ...
+C100\INC\c100.h
+複製了         1 個檔案。
+C100\Release\libC100.a
+複製了         1 個檔案。
+請按任意鍵繼續 . . . 
+20:56:44 **** Rebuild of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+gcc -IC:/Users/Chenj/workspace/C_Practice/C_Work/INC -IC:\Users\Chenj\workspace\C_Practice\lib\Inc -Os -g3 -fsanitize=float-divide-by-zero -fno-sanitize-recover -fsanitize=float-cast-overflow -pedantic -pedantic-errors -w -Wall -Wconversion -c -fmessage-length=0 -o src\main.o ..\src\main.c 
+gcc -LC:\Users\Chenj\workspace\C_Practice\lib/Release -o C_Work.exe src\main.o -lC100 
+Info: Parallel threads used: 1
+20:56:52 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:56:59 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:57:04 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:57:13 **** Incremental Build of configuration Release for project C_Work ****
+Info: Internal Builder is used for build
+Info: Parallel threads used: 0
+20:57:22 **** Clean-only build of configuration Release for project C100 ****
+rm -rf Lib_Src/platform.o Lib_Src/platform.d libC100.a 
+20:57:22 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 
+21:12:32 **** Clean-only build of configuration Release for project C100 ****
+rm -rf libC100.a Lib_Src/platform.o Lib_Src/platform.d 
+21:12:33 **** Clean-only build of configuration Release for project C_Work ****
+rm -rf src/main.o src/main.d C_Work.exe 

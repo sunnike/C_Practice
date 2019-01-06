@@ -1,0 +1,94 @@
+/*
+ ============================================================================
+ Name        : C_Test.c
+ Author      : John_Chen
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+
+/*
+ ============================================================================
+ Name        : Main.c
+ Author      :
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <common.h>
+
+
+
+#define ASM_TIMER_SET 1
+
+/* assembly code to read the TSC */
+
+static inline QWORD RDTSC(){
+unsigned int hi, lo;
+
+  __asm__ volatile("rdtsc" : "=a" (lo), "=d" (hi));
+
+  return ((QWORD)hi << 32) | (QWORD)lo;
+
+}
+
+
+
+int main(void) {
+#if ASM_TIMER_SET
+//int   hStart = 0, lStart = 0, hEnd = 0, lEnd = 0;
+QWORD start, end;
+#else
+clock_t start, end;
+#endif
+
+#if ASM_TIMER_SET
+	start = RDTSC();
+#else
+	start = clock();
+#endif
+
+
+
+	//platfeau(platform, PLAT_LEN);
+	printf("Damn");
+	end = RDTSC();
+/*
+#if ASM_TIMER_SET
+	__asm__ __volatile__(
+	"RDTSC\n"
+	"mov %2, %%edx \n"
+	"mov %3, %%eax \n"
+	"sub %%eax, %5 \n"
+	"cmp %%eax, 0 \n"
+	"jg L1 \n"
+	"neg %%eax \n"
+	"jmp L2 \n"
+	"L1: mov %1, %%eax \n"
+	"L2: sub %%edx, %4 \n"
+	"mov %0, %%edx\n"
+	:"=m"(hCnt), "=m"(lCnt)
+	:"m"(hEnd), "m"(lEnd), "m"(hStart), "m"(lStart)
+	:"%eax", "%edx"
+	);
+	QWORD timer = (hCnt<<32) + lCnt;
+#else
+	end = clock();
+#endif
+*/
+
+#if ASM_TIMER_SET
+	printf("\nProgram elapse time: %I64d ns\n",end - start);
+#else
+	printf("\nProgram elapse time: %lu ms\n",(end -start));
+#endif
+
+	return EXIT_SUCCESS;
+}
